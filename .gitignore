@@ -1,0 +1,11 @@
+*.ipynb
+*.cfg
+memo.txt
+
+bin/
+lib/
+share/
+\.vscode
+include/
+
+__pycache__/
