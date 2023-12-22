@@ -1,0 +1,64 @@
+[Stages Overview]
+1. Data Generation
+2. Reduce Redundant Data Points
+3. Get Job Detail and Save Raw Data
+4. Process NLP + Embedding
+5. Store Embedding Results
+
+[Data Generation]
+- Input: 
+    - None
+- Workload:
+    - Python script to scrape job post meta data that contains:
+        - job_source (which job posting website)
+        - job_id
+        - title
+        - company_id
+- Trigger:
+    - Periodic trigger using CRON
+- Output:
+    - LIST of JobMetaData Objects
+
+[Reduce Redundant Data Points]
+- Input:
+    - LIST of JobMetaData Objects
+- Workload:
+    - Check each JobMetaData ID against existing data in database
+    - Omit those that already exist
+- Trigger:
+    - [Data Generation] step complete
+- Output
+    - LIST of JobMetaData Objects that does not exist in database
+
+[Get Job Detail and Save Raw Data]
+- Input:
+    - LIST of JobMetaData Objects
+- Workload:
+    - Visit each job post page and scrape columned data plus raw html
+    - Save to persistent store
+    - Return LIST of Job objects
+- Trigger 
+    - [Reduce Redundant Data Points] completetion
+- Output:
+    - LIST of Job objects
+
+[Process NLP + Embedding]
+- Input:
+    - LIST of Job objects
+- Workload:
+    - Create embeddings for each Job object in a way that fits the project feature needs
+- Trigger:
+    - [Get Job Detail and Save Raw Data] completion
+    - OR (if using sub/pub), then whenever a new message enters queue
+- Output:
+    - MAP [job_id : Embeddings]
+
+[Store Emdedding Result]
+- Input:
+    - MAP [job_id : Embeddings]
+- Workload:
+    - Save embedding to persistent
+- Trigger:
+    - [Process NLP + Embedding] Completetion
+- Output:
+    - Count of newly inserted jobs

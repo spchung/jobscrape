@@ -9,3 +9,8 @@ share/
 include/
 
 __pycache__/
+
+*.bin.gz
+
+
+.DS_Store
