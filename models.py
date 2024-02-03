@@ -19,3 +19,4 @@ class Job(BaseModel):
     technical_skills: str
     addition_requirements: str
     raw_html: str
+    description: str

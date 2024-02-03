@@ -11,6 +11,6 @@ include/
 __pycache__/
 
 *.bin.gz
-
+test/
 
 .DS_Store

@@ -3,6 +3,9 @@ from models import JobMetaData, Job
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bs
 from typing import Tuple
+from database.connection import Session
+from database.models import SentenceEmbedding
+from embedding.helper import get_embedding
 
 '''
     inputs:
@@ -79,16 +82,33 @@ def parse_job_page(meta: JobMetaData) -> Job:
         work_skills=clean_list_field(skill),
         technical_skills=clean_list_field(computer_skill),
         addition_requirements=clean_list_field(additional),
-        raw_html=""
+        raw_html="",
+        description=description
     )
     return job
+
+def save_embedding(job: Job) -> None:
+    session = Session()
+    embedding = get_embedding(job.description)
+    session.add(SentenceEmbedding(text=job.description, embedding=embedding))
+    session.commit()
+    session.close()
+    
 
 def exec(job_metadata_lis: List[JobMetaData]) -> List[JobMetaData]:
     # visit each page and then parse info
     jobs = []
     for meta in job_metadata_lis:
-        job = parse_job_page(meta)
-        jobs.append(job)
+        try:
+            job = parse_job_page(meta)
+
+            # for description in job
+
+            # save_embedding(job)
+            save_embedding(job)
+            
+        except Exception as e:
+            print(f"[ERROR] {e}")
     return jobs
         
 

@@ -1,11 +1,9 @@
-from phase_one import phase_one
-from phase_two import phase_two
-import configparser
+from phases.phase_one import phase_one
+from phases.phase_two import phase_two
+from config import config
 
 def main():
     # phase one
-    config = configparser.ConfigParser()
-    config.read('config.cfg')
     search_term = config.get('phase_one', 'search_terms')
     page_limit = config.get('phase_one', 'page_limit')
     base_url = config.get('phase_one', 'base_url')
@@ -15,7 +13,7 @@ def main():
         base_url
     )
     
-    small_lis = jobs_metadata_lis[:1]
+    small_lis = jobs_metadata_lis[:5]
     jobs = phase_two.exec(small_lis)
     print(jobs)
 
