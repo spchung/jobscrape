@@ -2,8 +2,9 @@ import time
 from urllib.request import urlopen
 from urllib.parse import quote
 from bs4 import BeautifulSoup as bs
-from models import JobMetaData
+from data_model.models import JobMetaData
 from typing import List
+from controller.jobs import check_if_job_exists
 
 '''
     inputs:
@@ -45,6 +46,11 @@ def exec(
             job_link = job_link_elem["href"]
             link_split = job_link.split("/")
             job_id = link_split[-2]
+
+            ## check job id exists
+            if check_if_job_exists(job_id):
+                print(f"[INFO] job id {job_id} exists, skipping")
+                continue
 
             # company id    
             company_link = company_link_elem["href"]

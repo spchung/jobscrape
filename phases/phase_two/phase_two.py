@@ -1,11 +1,11 @@
 from typing import List
-from models import JobMetaData, Job
+from data_model.models import JobMetaData, Job
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bs
 from typing import Tuple
-from database.connection import Session
-from database.models import SentenceEmbedding
-from embedding.helper import get_embedding
+from controller.jobs import create_job
+from datetime import datetime
+import re
 
 '''
     inputs:
@@ -14,12 +14,16 @@ from embedding.helper import get_embedding
     - sort (desc)
 '''
 def clean_list_field(field: str) -> str:
+    if field is None:
+        return None
     field = field.replace("\r", "")
     field = field.split("\n")
     sub = [s.strip() for s in field]
     return "|".join([s for s in sub if s != ""])
 
 def clean_text_field(field: str) -> str:
+    if field is None:
+        return None
     field = field.replace("\r", "")
     field = field.replace("\n", " ")
     return field.strip()
@@ -32,6 +36,13 @@ def get_exact_match_field(soup: bs, field: str, elem:str='span') -> Tuple[str, s
         value = matching_element.parent.find("span", class_="job_info_content").text
     return (field, value)
 
+def process_date_string(dateStr: str) -> str:
+    pattern = r'[0-9\/\-]+'
+    matches = re.findall(pattern, dateStr)
+    if len(matches) > 0:
+        return matches[0]
+    return None
+
 def parse_job_page(meta: JobMetaData) -> Job:
     job_id = meta.job_id
 
@@ -40,7 +51,12 @@ def parse_job_page(meta: JobMetaData) -> Job:
     page = urlopen(url)
     html = page.read().decode("utf-8")
     soup = bs(html, "html.parser")
-            
+
+    # last updated
+    last_updated = soup.find("small", class_="text-muted job_item_date body_4").text
+    if last_updated:
+        last_updated = process_date_string(last_updated)
+
     # type
     job_type = soup.find("div", class_="ui_items job_type").text
 
@@ -67,7 +83,10 @@ def parse_job_page(meta: JobMetaData) -> Job:
     _, computer_skill = get_exact_match_field(soup, "電腦專長：")
     # - 附加條件
     matching_element = soup.find("div", string="附加條件：")
-    additional = matching_element.parent.find("div", class_="ui_items_group").text
+    
+    additional = None
+    if matching_element:
+        additional = matching_element.parent.find("div", class_="ui_items_group").text
 
     job = Job(
         job_id=job_id,
@@ -82,17 +101,11 @@ def parse_job_page(meta: JobMetaData) -> Job:
         work_skills=clean_list_field(skill),
         technical_skills=clean_list_field(computer_skill),
         addition_requirements=clean_list_field(additional),
-        raw_html="",
-        description=description
+        raw_html=None,
+        description=description,
+        last_updated=last_updated
     )
     return job
-
-def save_embedding(job: Job) -> None:
-    session = Session()
-    embedding = get_embedding(job.description)
-    session.add(SentenceEmbedding(text=job.description, embedding=embedding))
-    session.commit()
-    session.close()
     
 
 def exec(job_metadata_lis: List[JobMetaData]) -> List[JobMetaData]:
@@ -103,9 +116,9 @@ def exec(job_metadata_lis: List[JobMetaData]) -> List[JobMetaData]:
             job = parse_job_page(meta)
 
             # for description in job
-
+            create_job(job)
             # save_embedding(job)
-            save_embedding(job)
+            # save_embedding(job)
             
         except Exception as e:
             print(f"[ERROR] {e}")
