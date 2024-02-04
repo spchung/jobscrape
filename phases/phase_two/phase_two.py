@@ -92,6 +92,7 @@ def parse_job_page(meta: JobMetaData) -> Job:
         job_id=job_id,
         company_id=meta.company_id,
         title=meta.title,
+        url=url,
         job_type=clean_text_field(job_type),
         location=clean_text_field(location),
         salary=clean_text_field(salary),

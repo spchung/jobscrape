@@ -20,6 +20,8 @@ class Jobs(Base):
     addition_requirements = Column(String)
     raw_html = Column(String)
     description = Column(String)
+    last_updated = Column(String)
+    url = Column(String)
 
     def from_job_model(job: Job):
         return Jobs(
@@ -37,7 +39,8 @@ class Jobs(Base):
             addition_requirements=job.addition_requirements,
             raw_html=job.raw_html,
             description=job.description,
-            # last_updated=job.last_updated
+            last_updated=job.last_updated,
+            url=job.url
         )
     
     def to_job_model(self) -> Job:
@@ -56,5 +59,6 @@ class Jobs(Base):
             addition_requirements=self.addition_requirements,
             raw_html=self.raw_html,
             description=self.description,
-            # last_updated=self.last_updated
+            last_updated=self.last_updated,
+            url=self.url
         )

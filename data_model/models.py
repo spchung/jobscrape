@@ -9,6 +9,7 @@ class Job(BaseModel):
     job_id: str 
     company_id: str
     title: str
+    url: str
     job_type: str | None
     location: str | None
     salary: str | None
