@@ -1,15 +1,15 @@
 # crud on jobs table
-from data_model.models import Job
+from data_model.models import JobMinimal, Job
 from config import config
 from database.connection import Session
 from database.models.jobs import Jobs as JobModel
 
 def create_job(job: Job):
     newJob = JobModel.from_job_model(job)
-    session = Session()
-    session.add(newJob)
-    session.commit()
-    session.close()
+    with Session() as session:
+        session.add(newJob)
+        session.commit()
+        return newJob.job_id
 
 def get_job_by_id(job_id: str) -> Job:
     session = Session()
@@ -33,6 +33,17 @@ def get_job_by_id(job_id: str) -> Job:
         raw_html=job.raw_html,
         description=job.description
     )
+
+def get_jobs_by_ids(job_ids: list[str]) -> list[Job]:
+    with Session() as session:
+        jobs = session.query(JobModel).filter(JobModel.job_id.in_(job_ids)).all()
+        return [
+            JobMinimal(
+                job_id=job.job_id,
+                title=job.title,
+                description=job.description)
+            for job in jobs
+        ]
 
 def check_if_job_exists(job_id: str) -> bool:
     session = Session()

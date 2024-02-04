@@ -16,7 +16,8 @@ from controller.jobs import check_if_job_exists
 def exec(
     search_term,
     page_limit,
-    base_url
+    base_url, 
+    source
 ) -> List[JobMetaData]:
     curr_page = 1
     jobs = []
@@ -60,7 +61,12 @@ def exec(
             # job title
             title = job_link_elem.text
 
-            job = JobMetaData(job_id=job_id, company_id=company_id, title=title)
+            job = JobMetaData(
+                job_id=job_id, 
+                company_id=company_id, 
+                title=title,
+                source=source
+            )
             
             jobs.append(job)
         

@@ -22,6 +22,7 @@ class Jobs(Base):
     description = Column(String)
     last_updated = Column(String)
     url = Column(String)
+    source = Column(String)
 
     def from_job_model(job: Job):
         return Jobs(
@@ -40,7 +41,8 @@ class Jobs(Base):
             raw_html=job.raw_html,
             description=job.description,
             last_updated=job.last_updated,
-            url=job.url
+            url=job.url,
+            source=job.source
         )
     
     def to_job_model(self) -> Job:
@@ -60,5 +62,6 @@ class Jobs(Base):
             raw_html=self.raw_html,
             description=self.description,
             last_updated=self.last_updated,
-            url=self.url
+            url=self.url,
+            source=self.source
         )

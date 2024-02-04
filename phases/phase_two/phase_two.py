@@ -104,27 +104,19 @@ def parse_job_page(meta: JobMetaData) -> Job:
         addition_requirements=clean_list_field(additional),
         raw_html=None,
         description=description,
-        last_updated=last_updated
+        last_updated=last_updated,
+        source=meta.source
     )
     return job
     
 
 def exec(job_metadata_lis: List[JobMetaData]) -> List[JobMetaData]:
     # visit each page and then parse info
-    jobs = []
+    job_ids = []
     for meta in job_metadata_lis:
         try:
             job = parse_job_page(meta)
-
-            # for description in job
-            create_job(job)
-            # save_embedding(job)
-            # save_embedding(job)
-            
+            job_ids.append(create_job(job))
         except Exception as e:
             print(f"[ERROR] {e}")
-    return jobs
-        
-
-
-
+    return job_ids
