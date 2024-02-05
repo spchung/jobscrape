@@ -22,6 +22,8 @@ def exec(
     curr_page = 1
     jobs = []
     page_limit = int(page_limit)
+
+    visited_set = set()
     while curr_page <= page_limit:
         time.sleep(1)
         url = base_url + f"?ks={search_term}&page={curr_page}&sort=desc"
@@ -48,9 +50,16 @@ def exec(
             link_split = job_link.split("/")
             job_id = link_split[-2]
 
-            ## check job id exists
+            ## check if job id has been visited
+            if job_id in visited_set:
+                print(f"[INFO] job id {job_id} has been visited, skipping")
+                continue
+
+            visited_set.add(job_id)
+
+            ## check job id exists IN DB
             if check_if_job_exists(job_id):
-                print(f"[INFO] job id {job_id} exists, skipping")
+                print(f"[INFO] job id {job_id} exists in database, skipping")
                 continue
 
             # company id    
