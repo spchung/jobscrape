@@ -35,6 +35,22 @@ def phase_two_task(jobs_metadata_lis: List[str]):
     job_ids = phase_two.exec(jobs_metadata_lis)
     return job_ids
 
+def phase_two_async_wrapper(n, step, jobs_metadata_lis):
+    workers = []
+    for i in range(0, n, step):
+        if i + step > n:
+            small_lis = jobs_metadata_lis[i:]
+        else:
+            small_lis = jobs_metadata_lis[i:i+step]
+        
+        workers.append(phase_two_task.submit(small_lis)) # use submit for concurrency
+    
+    res = []
+    for worker in workers:
+        res += worker.result()
+    return res
+
+
 @task
 def phase_three_task(job_ids: List[str]):
     # phase three - generate embeddings
@@ -57,7 +73,15 @@ def scrape_and_embed(
     )
     print(f"{len(jobs_metadata_lis)} new jobs discovered from - {source}")
 
-    job_ids = phase_two_task(jobs_metadata_lis)
+    # concurrency:
+    n = len(jobs_metadata_lis)
+    step = n // 5
+
+    print(f"n: {n}, step: {step}")
+    
+    job_ids = phase_two_task(n, step, jobs_metadata_lis)
+
+    # job_ids = phase_two_task(jobs_metadata_lis)
     print(f"{len(job_ids)} jobs parsed and saved to database")
 
     embedding_ids = phase_three_task(job_ids)
@@ -67,7 +91,7 @@ if __name__ == "__main__":
     scrape_and_embed(
         search_term=config.get('phase_one', 'search_terms'),
         base_url=config.get('phase_one', 'base_url'),
+        page_limit=config.get('phase_one', 'page_limit'),
         source="1111",
-        page_limit=5
     )
     
