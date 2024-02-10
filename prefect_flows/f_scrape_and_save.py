@@ -1,3 +1,13 @@
+import sys
+import os
+
+# Get the absolute path to the base directory
+base_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(base_dir)
+
+# Add the parent directory to the Python path
+sys.path.append(parent_dir)
+
 from phases.phase_one import phase_one
 from phases.phase_two import phase_two
 from phases.phase_three import phase_three

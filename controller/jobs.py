@@ -50,3 +50,52 @@ def check_if_job_exists(job_id: str) -> bool:
     job = session.query(JobModel).filter_by(job_id=job_id).first()
     session.close()
     return job is not None
+
+def query_jobs(
+    company_id: str,
+    title: str,
+    job_type: str,
+    location: str,
+    salary: str,
+    experience: str,
+    education_restriction: str,
+    subject_restriction: str,
+    work_skills: str,
+    technical_skills: str,
+    addition_requirements: str
+) -> list[JobMinimal]:
+    with Session() as session:
+        query = session.query(JobModel)
+        if company_id:
+            query = query.filter_by(company_id=company_id)
+        if title:
+            query = query.filter(JobModel.title.like(f"%{title}%"))
+        if job_type:
+            # like 
+            query = query.filter(JobModel.job_type.like(f"%{job_type}%"))
+        if location:
+            query = query.filter(JobModel.location.like(f"%{location}%"))
+        if salary:
+            query = query.filter(JobModel.salary.like(f"%{salary}%"))
+        if experience:
+            query = query.filter(JobModel.experience.like(f"%{experience}%"))
+        if education_restriction:
+            query = query.filter(JobModel.education_restriction.like(f"%{education_restriction}%"))
+        if subject_restriction:
+            query = query.filter(JobModel.subject_restriction.like(f"%{subject_restriction}%"))
+        if work_skills:
+            query = query.filter(JobModel.work_skills.like(f"%{work_skills}%"))
+        if technical_skills:
+            query = query.filter(JobModel.technical_skills.like(f"%{technical_skills}%"))
+        if addition_requirements:
+            query = query.filter(JobModel.addition_requirements.like(f"%{addition_requirements}%"))
+        jobs = query.all()
+        return [
+            JobMinimal(
+                job_id=job.job_id,
+                title=job.title,
+                description=job.description)
+            for job in jobs
+        ]
+        
+        
