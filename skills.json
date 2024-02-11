@@ -1,0 +1,1557 @@
+[
+    {
+        "context": "JAVA|JavaScript|MS SQL|MySQL|JAVA|MS SQL|Oracle|JAVA|JavaScript|MS SQL|MySQL|HTML|Word|Excel|PowerPoint|AutoCAD|Outlook|Access|MS SQL|MySQL|TCP/IP|Android|BCB|C#.NET|PLC|Word|Excel|PowerPoint|Outlook|Oracle|ASP.NET|Visual basic|MySQL|MS SQL|GitHub|JAVA|Python|PHP|MS SQL|ASP.NET|C#.NET|C#.NET|Arduino|Access|MySQL|MS SQL|Python|ARM|Firmware|Drivers|MS SQL|C#.NET|Visual basic|MS SQL|MS SQL|Oracle|JAVA|Visual C++|VB.NET|C#.NET|MFC|LINUX|Shell Script|C#|Python|JavaScript|Python|Windows 10|Delphi|Visual C++|C#.NET|C#|C#.NET|ASP.NET|MS SQL|Word|Excel|JavaScript|Visual basic|ASP.NET|C#.NET|jQuery|DB2|MS SQL|Windows 10|Excel|PowerPoint|Word|PowerPoint|Word|JAVA|ASP.NET|AutoCAD|PLC",
+        "annotations": [
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 21,
+                "label": "SKILL"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "label": "SKILL"
+            },
+            {
+                "start": 12,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 29,
+                "end": 32,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 36,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 7,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 15,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 19,
+                "end": 24,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 7,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 15,
+                "end": 26,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 12,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 7,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 4,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 13,
+                "end": 19,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 21,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 32,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 19,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "label": "SKILL"
+            },
+            {
+                "start": 50,
+                "end": 55,
+                "label": "SKILL"
+            },
+            {
+                "start": 57,
+                "end": 59,
+                "label": "SKILL"
+            }
+        ]
+    },
+    {
+        "context": "PHP|MySQL|Word|Excel|PowerPoint|Outlook|Visual basic|ASP.NET|VB.NET|C#.NET|MS SQL|C#.NET|C#|C#.NET|GitHub|HTTP|JavaScript|jQuery|PHP|MS SQL|MySQL|CSS|HTML|C#|Word|Excel|Windows 98|Windows Server 2000-2012|Windows NT|Visual basic|Visual C++|ASP.NET|C#.NET|MS SQL|Oracle|JavaScript|jQuery|C#.NET|Visual C++|Visual basic|Bluetooth|WiMAX|LINUX|Windows 7|windows 8|Windows 10|LAN|Ethernet|Firmware|FPGA|Drivers|ARM|Android|IOS|LTE|MQTT|C#|MCU|Obj-C|Swift|AJAX|JAVA|JSP|Spring|JavaScript|jQuery|C#|LINUX|OOP|UML|GitHub|AJAX|JAVA|JSP|MS SQL|MySQL|HTML|JavaScript|CSS|jQuery|Node.js|Vue.js|C#.NET|ASP.NET|C#|JavaScript|Visual C++|C#.NET|MS SQL|Oracle|JavaScript|Visual C++|C#.NET|MS SQL|Oracle|ASP.NET|Visual C++|MS SQL|HTML|JavaScript|JAVA|JavaScript|C#.NET|C#.NET|C#|JAVA|JavaScript|JSP|XML|jQuery|Oracle|JavaScript|Visual C++|C#.NET|MS SQL|Oracle|C#|AJAX|ASP.NET|C#|JavaScript|jQuery|MS SQL|Oracle|HTML|Python|LINUX|Access|MS SQL|ASP.NET MVC|Visual basic|Visual C++|Word|Excel|PowerPoint|Outlook|lnternet Explorer|windows 8|Windows 10|GitHub|MS SQL|PostgreSQL|Amazon Web Services (AWS)|HTML|JavaScript|CSS|SAS|Node.js|React|GitHub|Python|Visual C++|Android|JAVA|Python|LINUX|UNIX|TCP/IP|Vmware|Shell Script|Python|MySQL|Cisco|Ethernet|Amazon Web Services (AWS)|Python",
+        "annotations": [
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 4,
+                "end": 8,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 13,
+                "end": 19,
+                "label": "SKILL"
+            },
+            {
+                "start": 21,
+                "end": 26,
+                "label": "SKILL"
+            },
+            {
+                "start": 28,
+                "end": 33,
+                "label": "SKILL"
+            },
+            {
+                "start": 35,
+                "end": 40,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 1,
+                "label": "SKILL"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "label": "SKILL"
+            },
+            {
+                "start": 17,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 31,
+                "label": "SKILL"
+            },
+            {
+                "start": 33,
+                "end": 38,
+                "label": "SKILL"
+            },
+            {
+                "start": 57,
+                "end": 59,
+                "label": "SKILL"
+            },
+            {
+                "start": 61,
+                "end": 64,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 45,
+                "label": "SKILL"
+            },
+            {
+                "start": 47,
+                "end": 56,
+                "label": "SKILL"
+            },
+            {
+                "start": 71,
+                "end": 80,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 27,
+                "label": "SKILL"
+            },
+            {
+                "start": 31,
+                "end": 39,
+                "label": "SKILL"
+            },
+            {
+                "start": 41,
+                "end": 45,
+                "label": "SKILL"
+            },
+            {
+                "start": 47,
+                "end": 51,
+                "label": "SKILL"
+            },
+            {
+                "start": 53,
+                "end": 61,
+                "label": "SKILL"
+            },
+            {
+                "start": 63,
+                "end": 71,
+                "label": "SKILL"
+            },
+            {
+                "start": 73,
+                "end": 82,
+                "label": "SKILL"
+            },
+            {
+                "start": 84,
+                "end": 86,
+                "label": "SKILL"
+            },
+            {
+                "start": 88,
+                "end": 95,
+                "label": "SKILL"
+            },
+            {
+                "start": 97,
+                "end": 104,
+                "label": "SKILL"
+            },
+            {
+                "start": 106,
+                "end": 109,
+                "label": "SKILL"
+            },
+            {
+                "start": 111,
+                "end": 117,
+                "label": "SKILL"
+            },
+            {
+                "start": 119,
+                "end": 121,
+                "label": "SKILL"
+            },
+            {
+                "start": 123,
+                "end": 129,
+                "label": "SKILL"
+            },
+            {
+                "start": 131,
+                "end": 133,
+                "label": "SKILL"
+            },
+            {
+                "start": 135,
+                "end": 137,
+                "label": "SKILL"
+            },
+            {
+                "start": 139,
+                "end": 142,
+                "label": "SKILL"
+            },
+            {
+                "start": 147,
+                "end": 149,
+                "label": "SKILL"
+            },
+            {
+                "start": 151,
+                "end": 155,
+                "label": "SKILL"
+            },
+            {
+                "start": 157,
+                "end": 161,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 8,
+                "label": "SKILL"
+            },
+            {
+                "start": 10,
+                "end": 12,
+                "label": "SKILL"
+            },
+            {
+                "start": 14,
+                "end": 19,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 8,
+                "label": "SKILL"
+            },
+            {
+                "start": 10,
+                "end": 12,
+                "label": "SKILL"
+            },
+            {
+                "start": 75,
+                "end": 81,
+                "label": "SKILL"
+            },
+            {
+                "start": 83,
+                "end": 88,
+                "label": "SKILL"
+            },
+            {
+                "start": 20,
+                "end": 22,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 14,
+                "end": 24,
+                "label": "SKILL"
+            },
+            {
+                "start": 80,
+                "end": 96,
+                "label": "SKILL"
+            },
+            {
+                "start": 14,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 25,
+                "end": 49,
+                "label": "SKILL"
+            },
+            {
+                "start": 71,
+                "end": 73,
+                "label": "SKILL"
+            },
+            {
+                "start": 83,
+                "end": 87,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "label": "SKILL"
+            },
+            {
+                "start": 18,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 25,
+                "end": 36,
+                "label": "SKILL"
+            },
+            {
+                "start": 51,
+                "end": 55,
+                "label": "SKILL"
+            }
+        ]
+    },
+    {
+        "context": "Python|Golang|Docker|PHP|Kubernetes|PHP|HTML|JavaScript|LINUX|UNIX|UML|HTML|JavaScript|CSS|LINUX|TCP/IP|LINUX|Android|Python|Matlab|Python|Python|Android|JAVA|LINUX|Android|LINUX|Android|JAVA|LINUX|Android|JAVA|Python|C#|Cadence Allegro|ORCAD|Android|JAVA|Kotlin|JavaScript|SAP ERP|LINUX|C#|LINUX|Python|CentOS|LINUX|Mac OS|Windows 10|HTTP|MySQL|Python|GitHub|JAVA|Obj-C|HTML|CSS|jQuery|Python|CentOS|Mac OS|Windows 10|HTTP|MySQL|C#|C#.NET|Python|CentOS|LINUX|Mac OS|Windows 10|PHP|HTTP|jQuery|JavaScript|MySQL|HTML|JavaScript|jQuery|Vue.js|Node.js|HTML|CSS|JavaScript|OOP|Node.js|LINUX|Ruby On Rails|Python|MS SQL|MySQL|ASP.NET|C#.NET|JavaScript|jQuery|Angular|CSS",
+        "annotations": [
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 7,
+                "end": 12,
+                "label": "SKILL"
+            },
+            {
+                "start": 14,
+                "end": 19,
+                "label": "SKILL"
+            },
+            {
+                "start": 21,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 25,
+                "end": 34,
+                "label": "SKILL"
+            },
+            {
+                "start": 4,
+                "end": 7,
+                "label": "SKILL"
+            },
+            {
+                "start": 9,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 12,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 8,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 1,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 13,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 13,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 20,
+                "end": 29,
+                "label": "SKILL"
+            },
+            {
+                "start": 31,
+                "end": 34,
+                "label": "SKILL"
+            },
+            {
+                "start": 36,
+                "end": 40,
+                "label": "SKILL"
+            },
+            {
+                "start": 49,
+                "end": 54,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 39,
+                "end": 44,
+                "label": "SKILL"
+            },
+            {
+                "start": 18,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 25,
+                "end": 31,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 27,
+                "end": 32,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 33,
+                "end": 39,
+                "label": "SKILL"
+            }
+        ]
+    },
+    {
+        "context": "JavaScript|C#.NET|jQuery|Angular|C#|MS SQL|ASP.NET|ASP.NET|MS SQL|HTML|JavaScript|C#|JavaScript|jQuery|HTML|LINUX|Oracle|MySQL|socket|PHP|MySQL|Webpack|JAVA|Spring|Spring Boot|Spring Data|MySQL|GitHub|Python|HTML|JavaScript|jQuery|CSS|PhotoShop|JavaScript|Node.js|Vue.js|CSS|Python|Word|Excel|PowerPoint|Outlook|Windows NT|JavaScript|Android|GitHub|JAVA|Kotlin|IOS|GitHub|Obj-C|Swift|JavaScript|PHP|AJAX|MySQL|HTML|JavaScript|PHP|AJAX|jQuery|Vue.js|GitHub|Webpack|React|HTML|CSS|Ruby On Rails|Node.js|GitHub|JavaScript|jQuery|HTML|CSS|Unity|AutoCAD|Outlook|PowerPoint|AutoCAD|Word|Excel|PowerPoint|Word|Excel|PowerPoint|Outlook|Excel|Word|Premiere|Illustrator|Adobe Photoshop Lightroom|Illustrator|Adobe Photoshop Lightroom|PowerPoint|Word|Excel|PowerPoint|Outlook",
+        "annotations": [
+            {
+                "start": 0,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "label": "SKILL"
+            },
+            {
+                "start": 18,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 1,
+                "label": "SKILL"
+            },
+            {
+                "start": 3,
+                "end": 8,
+                "label": "SKILL"
+            },
+            {
+                "start": 10,
+                "end": 16,
+                "label": "SKILL"
+            },
+            {
+                "start": 15,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 7,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 13,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 8,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 13,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 20,
+                "end": 30,
+                "label": "SKILL"
+            },
+            {
+                "start": 32,
+                "end": 42,
+                "label": "SKILL"
+            },
+            {
+                "start": 50,
+                "end": 55,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 32,
+                "label": "SKILL"
+            },
+            {
+                "start": 34,
+                "end": 42,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 19,
+                "end": 24,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 39,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 20,
+                "end": 25,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "label": "SKILL"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "label": "SKILL"
+            },
+            {
+                "start": 15,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 49,
+                "end": 53,
+                "label": "SKILL"
+            },
+            {
+                "start": 64,
+                "end": 76,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 7,
+                "label": "SKILL"
+            },
+            {
+                "start": 9,
+                "end": 19,
+                "label": "SKILL"
+            },
+            {
+                "start": 21,
+                "end": 45,
+                "label": "SKILL"
+            }
+        ]
+    },
+    {
+        "context": "Word|Excel|PowerPoint|Outlook|AutoCad 2D|AutoCad 3D|SOLIDWORKS|Excel|Outlook|PowerPoint|Word|C#|MS SQL|Oracle|HTML|JavaScript|jQuery|CSS|Vue.js|Excel|PowerPoint|Project|Word|XMind6|Excel|PowerPoint|Word|Cadence Allegro|ORCAD|PADS|PowerPCB|HTML|jQuery|CSS|PhotoShop|Illustrator|PHP|MySQL|JavaScript|Word|Excel|PowerPoint|Windows 10|PowerPoint|Word|Excel|Outlook|HTML|Word|Excel|Outlook|PowerPoint|Visio|Axure RP|Word|Excel|PowerPoint|Excel|Outlook|PowerPoint|Word|Project|AutoCAD|Excel|Outlook|PowerPoint|Word|Word|Excel|PowerPoint|AutoCAD|Visio|Excel|PowerPoint|Adobe Acrobat DC|Word|Project|Excel|Word|Excel|PowerPoint|Project|Word|Excel|PowerPoint|Outlook|Word|Excel|PowerPoint|Word|PowerPoint|Outlook|Excel|Word|Windows 10|Excel|Word|Adobe Acrobat DC|Illustrator|PhotoShop|Word|Excel|Outlook|Word|Excel|PhotoShop|Illustrator|Google Analytics|Excel|Windows 10|Excel|Word|Adobe Acrobat DC|Word|Excel|PowerPoint|Outlook|HTML|CSS|Figma|Bootstrap|PhotoShop|Illustrator|Excel|Word|PowerPoint",
+        "annotations": [
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 39,
+                "label": "SKILL"
+            },
+            {
+                "start": 41,
+                "end": 50,
+                "label": "SKILL"
+            },
+            {
+                "start": 52,
+                "end": 61,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 1,
+                "label": "SKILL"
+            },
+            {
+                "start": 3,
+                "end": 8,
+                "label": "SKILL"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "label": "SKILL"
+            },
+            {
+                "start": 17,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 31,
+                "label": "SKILL"
+            },
+            {
+                "start": 33,
+                "end": 38,
+                "label": "SKILL"
+            },
+            {
+                "start": 40,
+                "end": 42,
+                "label": "SKILL"
+            },
+            {
+                "start": 44,
+                "end": 49,
+                "label": "SKILL"
+            },
+            {
+                "start": 17,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 25,
+                "label": "SKILL"
+            },
+            {
+                "start": 27,
+                "end": 34,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 24,
+                "label": "SKILL"
+            },
+            {
+                "start": 26,
+                "end": 36,
+                "label": "SKILL"
+            },
+            {
+                "start": 38,
+                "end": 40,
+                "label": "SKILL"
+            },
+            {
+                "start": 42,
+                "end": 46,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 34,
+                "label": "SKILL"
+            },
+            {
+                "start": 36,
+                "end": 43,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 15,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 37,
+                "label": "SKILL"
+            },
+            {
+                "start": 39,
+                "end": 43,
+                "label": "SKILL"
+            },
+            {
+                "start": 45,
+                "end": 53,
+                "label": "SKILL"
+            }
+        ]
+    },
+    {
+        "context": "Figma|Illustrator|PhotoShop|Sketch|Axure RP|Figma|HTML|CSS|jQuery|Adobe XD|Illustrator|Dreamweaver|InDesign|3Ds Max|After Effects|Director|Flash|Premiere|PhotoShop|Illustrator|Adobe XD|Excel|Word|Outlook|PowerPoint|Visual basic|C#.NET|Illustrator|PhotoShop|After Effects|Sketch|Figma|CSS|HTML|JavaScript|GitHub|Word|Excel|Visio|JAVA|ASP.NET|MS SQL|PhotoShop|Illustrator|Sketch|Adobe XD|Figma|Visio|After Effects|Adobe Photoshop Lightroom|Illustrator|Sketch|Word|Excel|Outlook|Windows XP|Excel|Word|Figma|Adobe XD|Sketch|PhotoShop|Illustrator|Axure RP|Android|IOS|PhotoShop|Illustrator|Sketch|HTML|JavaScript|CSS|PhotoShop|Illustrator|MS SQL|Python|SAS|Word|Excel|Outlook|Windows XP|Windows 7|Windows 10|AutoCAD|PowerPoint|SOLIDWORKS|LAN|Ethernet|VPN|Outlook|Word|Excel|Windows 10|PowerPoint|ASP.NET|C#|MS SQL|Matlab|C#|CSS|Illustrator|PhotoShop|AutoCAD|Illustrator|PhotoShop|Unity|Sketch|Axure RP|Adobe XD|SAP ERP|Excel|Outlook|PowerPoint|Word|Word|Excel|Excel|Outlook|PowerPoint|Word|SAP ERP|Android",
+        "annotations": [
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 10,
+                "label": "SKILL"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 27,
+                "label": "SKILL"
+            },
+            {
+                "start": 29,
+                "end": 36,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 7,
+                "label": "SKILL"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 10,
+                "label": "SKILL"
+            },
+            {
+                "start": 12,
+                "end": 19,
+                "label": "SKILL"
+            },
+            {
+                "start": 21,
+                "end": 27,
+                "label": "SKILL"
+            },
+            {
+                "start": 29,
+                "end": 41,
+                "label": "SKILL"
+            },
+            {
+                "start": 43,
+                "end": 50,
+                "label": "SKILL"
+            },
+            {
+                "start": 52,
+                "end": 56,
+                "label": "SKILL"
+            },
+            {
+                "start": 58,
+                "end": 65,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 19,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 13,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 9,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 20,
+                "end": 25,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "label": "SKILL"
+            },
+            {
+                "start": 17,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "label": "SKILL"
+            },
+            {
+                "start": 20,
+                "end": 44,
+                "label": "SKILL"
+            },
+            {
+                "start": 19,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 8,
+                "end": 10,
+                "label": "SKILL"
+            },
+            {
+                "start": 7,
+                "end": 12,
+                "label": "SKILL"
+            },
+            {
+                "start": 14,
+                "end": 16,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 38,
+                "label": "SKILL"
+            },
+            {
+                "start": 40,
+                "end": 49,
+                "label": "SKILL"
+            },
+            {
+                "start": 51,
+                "end": 57,
+                "label": "SKILL"
+            },
+            {
+                "start": 70,
+                "end": 79,
+                "label": "SKILL"
+            },
+            {
+                "start": 81,
+                "end": 83,
+                "label": "SKILL"
+            },
+            {
+                "start": 85,
+                "end": 92,
+                "label": "SKILL"
+            },
+            {
+                "start": 94,
+                "end": 96,
+                "label": "SKILL"
+            },
+            {
+                "start": 8,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 5,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 26,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            }
+        ]
+    },
+    {
+        "context": "Word|Excel|PowerPoint|AutoCAD|Cadence Allegro|ORCAD|HTML|CSS|JavaScript|Excel|Google Analytics|ASP.NET|MS SQL|Excel|Outlook|PowerPoint|Word|AJAX|C#|C#.NET|Delphi|HTTP|jQuery|JavaScript|PHP|XML|Word|Excel|PowerPoint|Outlook|JAVA|VB.NET|C#.NET|MS SQL|Oracle|Firmware|socket|Ethernet|ASP.NET MVC|C#.NET|DOS|Outlook|FoxPro|Visual Foxpro|AutoCAD|Flutter|JavaScript|React Native|HTML|Google Analytics|ASP.NET|Delphi|MS SQL|C#|JavaScript|JAVA|ASP.NET|MS SQL|Oracle|Illustrator|PhotoShop|After Effects|Sketch|Figma|LINUX|Python|ASP|C#|JAVA|MS SQL|Word|Excel|PowerPoint|Clipper|XML|Dbase|FoxPro|MS SQL|Visual Foxpro|HTML|ASP.NET|C#|VBA|JavaScript|MS SQL|Excel|Word|PowerPoint|JAVA|Swift|LINUX|AJAX|HTML|JavaScript|jQuery|CSS|Node.js|PhotoShop|Illustrator|Figma|ASP.NET|Python|MS SQL|MySQL|JavaScript|Excel|Outlook|Word|LINUX|Windows 10|HTML|Excel|Outlook|PowerPoint|Word|Figma",
+        "annotations": [
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 7,
+                "label": "SKILL"
+            },
+            {
+                "start": 9,
+                "end": 18,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 21,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 12,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 3,
+                "label": "SKILL"
+            },
+            {
+                "start": 5,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 15,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 25,
+                "label": "SKILL"
+            },
+            {
+                "start": 27,
+                "end": 32,
+                "label": "SKILL"
+            },
+            {
+                "start": 45,
+                "end": 47,
+                "label": "SKILL"
+            },
+            {
+                "start": 49,
+                "end": 51,
+                "label": "SKILL"
+            },
+            {
+                "start": 30,
+                "end": 33,
+                "label": "SKILL"
+            },
+            {
+                "start": 35,
+                "end": 40,
+                "label": "SKILL"
+            },
+            {
+                "start": 56,
+                "end": 61,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 7,
+                "label": "SKILL"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "label": "SKILL"
+            },
+            {
+                "start": 16,
+                "end": 23,
+                "label": "SKILL"
+            },
+            {
+                "start": 25,
+                "end": 35,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 12,
+                "end": 17,
+                "label": "SKILL"
+            },
+            {
+                "start": 19,
+                "end": 31,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 6,
+                "label": "SKILL"
+            },
+            {
+                "start": 19,
+                "end": 30,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 10,
+                "label": "SKILL"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 34,
+                "label": "SKILL"
+            },
+            {
+                "start": 36,
+                "end": 41,
+                "label": "SKILL"
+            },
+            {
+                "start": 43,
+                "end": 47,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 11,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 2,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "label": "SKILL"
+            },
+            {
+                "start": 34,
+                "end": 38,
+                "label": "SKILL"
+            },
+            {
+                "start": 11,
+                "end": 13,
+                "label": "SKILL"
+            },
+            {
+                "start": 0,
+                "end": 4,
+                "label": "SKILL"
+            },
+            {
+                "start": 38,
+                "end": 44,
+                "label": "SKILL"
+            },
+            {
+                "start": 22,
+                "end": 26,
+                "label": "SKILL"
+            },
+            {
+                "start": 6,
+                "end": 15,
+                "label": "SKILL"
+            }
+        ]
+    }
+]

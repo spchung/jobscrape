@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Optional
 
 class JobMetaData(BaseModel):
     job_id: str
@@ -12,18 +13,18 @@ class Job(BaseModel):
     title: str
     url: str
     source: str
-    job_type: str | None
-    location: str | None
-    salary: str | None
-    experience: str | None
-    education_restriction: str | None
-    subject_restriction: str | None
-    work_skills: str | None
-    technical_skills: str | None
-    addition_requirements: str | None
-    raw_html: str | None
-    description: str | None
-    last_updated: str | None
+    job_type: Optional[str | None]
+    location: Optional[str | None]
+    salary: Optional[str | None]
+    experience: Optional[str | None]
+    education_restriction: Optional[str | None]
+    subject_restriction: Optional[str | None]
+    work_skills: Optional[str | None]
+    technical_skills: Optional[str | None]
+    addition_requirements: Optional[str | None]
+    raw_html: Optional[str | None]
+    description: Optional[str | None]
+    last_updated: Optional[str | None]
 
 class JobMinimal(BaseModel):
     job_id: str

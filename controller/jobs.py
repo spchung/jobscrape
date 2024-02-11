@@ -3,7 +3,7 @@ from data_model.models import JobMinimal, Job
 from config import config
 from database.connection import Session
 from database.models.jobs import Jobs as JobModel
-
+from pprint import pprint
 def create_job(job: Job):
     newJob = JobModel.from_job_model(job)
     with Session() as session:
@@ -17,6 +17,8 @@ def get_job_by_id(job_id: str) -> Job:
     session.close()
     if job is None:
         return None
+    pprint(job.__dict__)
+    
     return Job(
         job_id=job.job_id,
         company_id=job.company_id,
@@ -31,7 +33,10 @@ def get_job_by_id(job_id: str) -> Job:
         technical_skills=job.technical_skills,
         addition_requirements=job.addition_requirements,
         raw_html=job.raw_html,
-        description=job.description
+        description=job.description,
+        source=job.source,
+        url=job.url,
+        last_updated=job.last_updated
     )
 
 def get_jobs_by_ids(job_ids: list[str]) -> list[Job]:
@@ -52,18 +57,18 @@ def check_if_job_exists(job_id: str) -> bool:
     return job is not None
 
 def query_jobs(
-    company_id: str,
-    title: str,
-    job_type: str,
-    location: str,
-    salary: str,
-    experience: str,
-    education_restriction: str,
-    subject_restriction: str,
-    work_skills: str,
-    technical_skills: str,
-    addition_requirements: str
-) -> list[JobMinimal]:
+    company_id: str | None = None,
+    title: str | None = None,
+    job_type: str | None = None,
+    location: str | None = None,
+    salary: str | None = None,
+    experience: str | None = None,
+    education_restriction: str | None = None,
+    subject_restriction: str | None = None,
+    work_skills: str | None = None,
+    technical_skills: str | None = None,
+    addition_requirements: str | None = None
+) -> list[Job]:
     with Session() as session:
         query = session.query(JobModel)
         if company_id:
@@ -71,7 +76,6 @@ def query_jobs(
         if title:
             query = query.filter(JobModel.title.like(f"%{title}%"))
         if job_type:
-            # like 
             query = query.filter(JobModel.job_type.like(f"%{job_type}%"))
         if location:
             query = query.filter(JobModel.location.like(f"%{location}%"))
@@ -90,12 +94,26 @@ def query_jobs(
         if addition_requirements:
             query = query.filter(JobModel.addition_requirements.like(f"%{addition_requirements}%"))
         jobs = query.all()
+        
         return [
-            JobMinimal(
+            Job(
                 job_id=job.job_id,
+                company_id=job.company_id,
                 title=job.title,
-                description=job.description)
+                job_type=job.job_type,
+                location=job.location,
+                salary=job.salary,
+                experience=job.experience,
+                education_restriction=job.education_restriction,
+                subject_restriction=job.subject_restriction,
+                work_skills=job.work_skills,
+                technical_skills=job.technical_skills,
+                addition_requirements=job.addition_requirements,
+                raw_html=job.raw_html,
+                description=job.description,
+                source=job.source,
+                url=job.url,
+                last_updated=job.last_updated
+            )
             for job in jobs
         ]
-        
-        
