@@ -1,10 +1,5 @@
+from web_scrapper.indeed import get_jobs_meta, get_job_content
 
-from controller.jobs import create_job
-from controller.embeddings import get_nearest_neighbors
-from embedding.helper import get_embedding
+lis = get_jobs_meta.exec('software engineer', 1, 'new york')
 
-embedding = get_embedding("智能系統開發")
-jobs = get_nearest_neighbors(embedding, 5)
-
-for job in jobs:
-    print(job['id'], job['text'])
+get_job_content.exec('software engineer', 'new york', lis)

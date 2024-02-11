@@ -4,6 +4,7 @@ from config import config
 from database.connection import Session
 from database.models.jobs import Jobs as JobModel
 from pprint import pprint
+
 def create_job(job: Job):
     newJob = JobModel.from_job_model(job)
     with Session() as session:

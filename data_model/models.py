@@ -1,9 +1,10 @@
 from pydantic import BaseModel
 from typing import Optional
+from datetime import datetime
 
 class JobMetaData(BaseModel):
     job_id: str
-    company_id: str
+    company_id: str | None
     title: str
     source: str 
 
@@ -35,3 +36,12 @@ class JobEmbedding(BaseModel):
     job_id: str
     description_emb: list[float]
     title_emb: list[float]
+
+class UnstructJob(BaseModel):
+    job_id: str
+    source: str
+    title: str
+    location: str
+    description_blob: str
+    url: str
+    scrapped_at: datetime
