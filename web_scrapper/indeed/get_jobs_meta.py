@@ -49,19 +49,30 @@ def exec(
         # per page
         job_results = soup.find("div", id="mosaic-provider-jobcards")
         
+
         list = job_results.find("ul")
 
         job_items = list.find_all("div", class_="cardOutline")
         for item in job_items:
             time.sleep(0.1)
             elem = bs(str(item), "html.parser")            
+
+            company_name = ""
+            company_location = elem.find("div", class_="company_location")
+            if company_location:
+                company_name_elem = company_location.find("span", {"data-testid":"company-name"})
+                if company_name_elem:
+                    company_name = company_name_elem.text
+
             job_title_h2 = elem.find("h2", class_="jobTitle")
             job_a = job_title_h2.find("a")
+            
             attributes = job_a.attrs
             job_metadata.append(
                 JobMetaData(
                     job_id = attributes.get("data-jk"),
                     company_id = None,
+                    company = company_name,
                     title = job_a.text,
                     source = source
                 )

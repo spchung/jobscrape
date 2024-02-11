@@ -4,6 +4,7 @@ from datetime import datetime
 
 class JobMetaData(BaseModel):
     job_id: str
+    company: str | None
     company_id: str | None
     title: str
     source: str 
@@ -40,8 +41,11 @@ class JobEmbedding(BaseModel):
 class UnstructJob(BaseModel):
     job_id: str
     source: str
+    company: str
     title: str
     location: str
     description_blob: str
     url: str
     scrapped_at: datetime
+    search_term: str
+    search_location: str

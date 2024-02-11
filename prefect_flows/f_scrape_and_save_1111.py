@@ -1,12 +1,8 @@
-import sys
-import os
-
-# Get the absolute path to the base directory
+import sys, os
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
-
-# Add the parent directory to the Python path
 sys.path.append(parent_dir)
+
 from web_scrapper.one_one_one_one.phase_one import phase_one
 from web_scrapper.one_one_one_one.phase_two import phase_two
 from web_scrapper.one_one_one_one.phase_three import phase_three

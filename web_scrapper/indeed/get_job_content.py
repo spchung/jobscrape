@@ -47,7 +47,13 @@ def visit_job_page(base_url: str, meta: JobMetaData) -> bs:
     soup = bs(html, "html.parser")
     return soup
 
-def scrape_job_content(page_soup: bs, url: str, meta: JobMetaData) -> UnstructJobModel:
+def scrape_job_content(
+        page_soup: bs, 
+        url: str, 
+        meta: JobMetaData,
+        search_term: str,
+        search_location: str
+    ) -> UnstructJobModel:
 
     right_pane = page_soup.find("div", class_="jobsearch-RightPane")
 
@@ -70,11 +76,14 @@ def scrape_job_content(page_soup: bs, url: str, meta: JobMetaData) -> UnstructJo
     return UnstructJobModel(
         job_id = meta.job_id,
         source = meta.source,
+        company = meta.company,
         title = meta.title,
         location = location,
         description_blob = description_blob,
         url = url,
-        scrapped_at = datetime.utcnow()
+        scrapped_at = datetime.utcnow(),
+        search_term = search_term,
+        search_location = search_location
     )
     
 
@@ -97,10 +106,14 @@ def exec(
             continue
 
         url, page_soup = visit_page_v2(base_url, meta)
-        # page_soup = visit_job_page(base_url, meta)
-        unstruct_job_model = scrape_job_content(page_soup, url, meta)
+        
+        unstruct_job_model = scrape_job_content(page_soup, url, meta, search_term, location)
         if unstruct_job_model:
-            new_id = create_unstruct_job(unstruct_job_model)
+            try:
+                new_id = create_unstruct_job(unstruct_job_model)
+            except Exception as e:
+                print(f"[ERROR] failed to create unstruct job {meta.job_id} with error: {e}")
+                continue
         if new_id:
             job_ids.append(new_id)
     
