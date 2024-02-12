@@ -6,17 +6,13 @@ cwd = os.getcwd()
 import json
 training_data = []
 
-with open('skills.json', 'r') as f:
-    data = json.load(f)
-    for chunk in data:
-        
-        annotations = []
-        for anno in chunk['annotations']:
-            annotations.append((anno['start'], anno['end'], anno['label']))
+# open all files in training_data/annotations
+for filename in os.listdir("training_data/annotations"):
+    with open("training_data/annotations/" + filename) as f:
+        data = json.load(f)
+        text, annotations = data['annotations'][0]
 
-        training_data.append(
-            (chunk['context'], annotations)
-        )
+        training_data.append((text, annotations['entities']))
 
 from spacy.tokens import DocBin
 import spacy 
@@ -33,6 +29,7 @@ for text, annotations in training_data:
             pass
         else:
             ents.append(span)
+            print("success")
     doc.ents = ents
     db.add(doc)
 

@@ -15,3 +15,10 @@ test/
 
 .DS_Store
 *.spacy
+
+*.csv
+
+*train.txt
+
+/training_data
+/model_outputs
