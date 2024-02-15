@@ -1,4 +1,3 @@
-
 from __future__ import unicode_literals, print_function
 import plac
 import random
@@ -6,7 +5,13 @@ from pathlib import Path
 import spacy
 from tqdm import tqdm
 
-model = None
+import sys
+import os
+base_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(base_dir)
+sys.path.append(parent_dir)
+
+model = "en_core_web_lg"
 # curr directory
 output_dir = Path("model_outputs/m_software_engineer_job_ner")
 n_iter=100

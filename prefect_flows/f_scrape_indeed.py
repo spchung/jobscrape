@@ -66,7 +66,6 @@ def scrape_indeed_flow(
 
     return job_ids
 
-
 if __name__ == "__main__":
     scrape_indeed_flow(
         search_term=config.get('indeed', 'search_terms'),
