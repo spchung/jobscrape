@@ -12,3 +12,4 @@ Experience in C/C++ development required.
 doc = nlp2(text)
 for ent in doc.ents:
     print(ent.text, ent.label_)
+print("done")
