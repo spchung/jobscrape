@@ -1,6 +1,6 @@
-from phases.phase_one import phase_one
-from phases.phase_two import phase_two
-from phases.phase_three import phase_three
+from web_scrapper.one_one_one_one.phase_one import phase_one
+from web_scrapper.one_one_one_one.phase_two import phase_two
+from web_scrapper.one_one_one_one.phase_three import phase_three
 from config import config
 
 def main():

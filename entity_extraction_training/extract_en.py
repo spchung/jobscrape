@@ -1,17 +1,9 @@
 import sys
 import os, json
 
-# Get the absolute path to the base directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
-
-# Add the parent directory to the Python path
 sys.path.append(parent_dir)
-
-import spacy
-from spacy.training import Example, offsets_to_biluo_tags
-import random
-from pprint import pprint
 
 from controller.jobs import query_jobs, get_job_by_id
 

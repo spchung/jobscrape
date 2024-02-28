@@ -86,7 +86,6 @@ def scrape_job_content(
         search_location = search_location
     )
     
-
 def exec(
     search_term,
     location,

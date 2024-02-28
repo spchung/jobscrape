@@ -72,4 +72,3 @@ if __name__ == "__main__":
         location=config.get('indeed', 'location'),
         page_limit=config.get('indeed', 'page_limit'),
     )
-    
