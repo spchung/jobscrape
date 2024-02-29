@@ -1,11 +1,8 @@
 import sys
 import os
 
-# Get the absolute path to the base directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
-
-# Add the parent directory to the Python path
 sys.path.append(parent_dir)
 
 from prefect import flow, task
