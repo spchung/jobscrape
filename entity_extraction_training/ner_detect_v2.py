@@ -253,7 +253,18 @@ text = '''
        apply@progyny.com
       .
 '''
+from typing import List
+from pprint import pprint
 doc = nlp2(text)
+ddict = {}
+
+def clean_text(text: str) -> str:
+    return text.strip().replace("\n", " ").replace("  ", " ")
+
 for ent in doc.ents:
-    print(ent.text, ent.label_)
-print("done")
+    text = clean_text(ent.text)
+    if ent.label_ not in ddict:
+        ddict[ent.label_] = [text]
+    else:
+        ddict[ent.label_].append(text)
+pprint(ddict)
