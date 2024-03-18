@@ -26,7 +26,6 @@ def save_job_embedding(job_embedding: JobEmbedding) -> None:
         session.commit()
         return new_job_embedding.job_id
         
-
 def get_nearest_neighbors(search_embedding, limit=5) -> List[str]:
     session = Session()
     

@@ -5,6 +5,7 @@ from database.connection import Session
 from database.models.jobs import Jobs as JobModel
 from pprint import pprint
 
+# SQL 
 def create_job(job: Job):
     newJob = JobModel.from_job_model(job)
     with Session() as session:
@@ -118,3 +119,30 @@ def query_jobs(
             )
             for job in jobs
         ]
+
+
+# neo4j
+from neo4j_database import get_driver
+from data_model.models import UnstructJob
+from typing import List
+
+def create_job_neo4j_entity(job:UnstructJob):
+  driver = get_driver()
+  driver.execute_query(f"""
+    CREATE (job:Job {{
+      job_id: "{job.job_id}",
+      title: "{job.title}",
+      location: "{job.location}",
+      company: "{job.company}",
+      url: "{job.url}"
+    }})
+  """)
+
+def create_require_skill_relationship(job_id:str, skills:List[str]):
+  driver = get_driver()
+  for skill in skills:
+    driver.execute_query(f"""
+      MATCH (job:Job {{job_id: "{job_id}"}})
+      MERGE (skill:Skill {{name: "{skill}"}})
+      MERGE (job)-[:REQUIRES_SKILL]->(skill)
+    """)
